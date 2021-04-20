@@ -3,7 +3,17 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MyApp());
 }
-class MyApp extends StatelessWidget{
+class MyApp extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+  
+}
+
+
+class MyAppState extends State{
   int cntr = 0;
   void incrementConter(){
     cntr+=3;
@@ -35,7 +45,11 @@ class MyApp extends StatelessWidget{
         ),  
       ),
     );
-  }
+
+
+}
+  
+  
   
   
   
