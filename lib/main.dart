@@ -6,16 +6,19 @@ void main() {
 class MyApp extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
-    return MyAppState();
+    return _MyAppState();
   }
   
 }
 
 
-class MyAppState extends State{
+class _MyAppState extends State<MyApp>{
   int cntr = 0;
   void incrementConter(){
-    cntr+=3;
+    setState(() {
+      cntr+=3;
+    });
+    
   }
   @override
   Widget build(BuildContext context){
