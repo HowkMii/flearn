@@ -6,8 +6,7 @@ void main() {
 class MyApp extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+    return MyAppState();
   }
   
 }
