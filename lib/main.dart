@@ -9,9 +9,20 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       home: Scaffold(
         appBar:AppBar(title: Text("appbar title"),) ,
-        body: Text("app bar"),
-       
-
+        body: Column(
+          children: <Widget>[
+            Text("app bar"),
+            Text("app bar"),
+            Text("app bar"),
+            Text("app bar"),
+            Text("app bar"),
+            Text("app bar"),
+          ],
+         
+        
+        
+        ),
+          
       ),
     );
   }
