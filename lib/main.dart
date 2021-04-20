@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget{
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: incrementConter,
+          child: Icon(Icons.add),
         ),  
       ),
     );
