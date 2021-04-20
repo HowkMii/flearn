@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget{
 
 class _MyAppState extends State<MyApp>{
   int cntr = 0;
-  void incrementConter(){
+  void _incrementConter(){
     setState(() {
       cntr+=3;
     });
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp>{
         
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: incrementConter,
+          onPressed: _incrementConter,
           child: Icon(Icons.add),
         ),  
       ),
