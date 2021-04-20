@@ -9,7 +9,9 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       home: Scaffold(
         appBar:AppBar(title: Text("appbar title"),) ,
-        body: Column(
+        body: Center(
+          child: Column(
+             mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("app bar"),
             Text("app bar"),
@@ -18,6 +20,8 @@ class MyApp extends StatelessWidget{
             Text("app bar"),
             Text("app bar"),
           ],
+         
+          ),
          
         
         
