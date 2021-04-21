@@ -25,7 +25,9 @@ class _MyAppState extends State<MyApp>{
     return MaterialApp(
       home: Scaffold(
         appBar:AppBar(title: Text("appbar title"),) ,
-        body: Center(
+        body: Container(
+          color: Colors.black,
+          
          
           child: Column(
             
