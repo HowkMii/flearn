@@ -26,29 +26,20 @@ class _MyAppState extends State<MyApp>{
       home: Scaffold(
         appBar:AppBar(title: Text("appbar title"),) ,
         body: Container(
-          color: Color(0xffffffff) ,
+          child: Column(children: <Widget>[
+            Text("hi ")
+          ],)
+            
           
-         
-          child: Column(
-            
-             mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text("have you pushed the button this many times"),
-            Text('$cntr')
-            
-          ],
-         
-          ),
+        
          
         
         
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: _incrementConter,
-          child: Icon(Icons.add),
+       
         ),  
-      ),
-    );
+      );
+ 
 
 
 }
