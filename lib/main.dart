@@ -30,6 +30,8 @@ class _MyAppState extends State<MyApp>{
           fontSize: 30,
           fontWeight: FontWeight.bold,
           backgroundColor: Colors.black,
+          wordSpacing: 40,
+
 
         ),)
           
