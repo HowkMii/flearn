@@ -28,6 +28,7 @@ class _MyAppState extends State<MyApp>{
         body: Text("Body title", style: TextStyle(
           color: Colors.black,
           fontSize: 30,
+          fontWeight: FontWeight.bold,
 
         ),)
           
