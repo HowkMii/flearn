@@ -42,6 +42,7 @@ class _MyAppState extends State<MyApp>{
           ],
           decoration: TextDecoration.combine([TextDecoration.underline, TextDecoration.overline]),
           decorationColor: Colors.black12,
+          decorationStyle: TextDecorationStyle.dotted,
 
         ),)
           
