@@ -36,6 +36,7 @@ class _MyAppState extends State<MyApp>{
             
             Shadow(
               offset: Offset(10.0, 10.0),
+              blurRadius: 9,
               color: Colors.black)
 
           ],
