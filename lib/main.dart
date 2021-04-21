@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp>{
       home: Scaffold(
         appBar:AppBar(title: Text("appbar title"),) ,
         body: Container(
-          color: Colors.black,
+          color: Color.fromRGBO(255, 255, 255, 0.4) ,
           
          
           child: Column(
