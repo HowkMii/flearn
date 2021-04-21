@@ -27,6 +27,7 @@ class _MyAppState extends State<MyApp>{
         appBar:AppBar(title: Text("appbar title"),) ,
         body: Text("Body title", style: TextStyle(
           color: Colors.black,
+          fontSize: 30,
 
         ),)
           
