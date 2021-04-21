@@ -33,7 +33,10 @@ class _MyAppState extends State<MyApp>{
           letterSpacing: 40,
           height: 20,
           shadows: <Shadow>[
-            Shadow(color: Colors.black)
+            
+            Shadow(
+              offset: Offset(10.0, 10.0),
+              color: Colors.black)
 
           ],
 
