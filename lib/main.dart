@@ -29,10 +29,13 @@ class _MyAppState extends State<MyApp>{
           color: Colors.black,
           fontSize: 30,
           fontWeight: FontWeight.bold,
-          backgroundColor: Colors.black,
           wordSpacing: 40,
           letterSpacing: 40,
           height: 20,
+          shadows: <Shadow>[
+            Shadow(color: Colors.black)
+
+          ],
 
 
         ),)
