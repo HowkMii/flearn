@@ -25,11 +25,10 @@ class _MyAppState extends State<MyApp>{
     return MaterialApp(
       home: Scaffold(
         appBar:AppBar(title: Text("appbar title"),) ,
-        body: Container(
-          child: Column(children: <Widget>[
-            Text("hi ")
-          ],)
-            
+        body: Text("Body title", style: TextStyle(
+          color: Colors.black,
+
+        ),)
           
         
          
@@ -37,9 +36,8 @@ class _MyAppState extends State<MyApp>{
         
         ),
        
-        ),  
-      );
- 
+        );  
+     
 
 
 }
