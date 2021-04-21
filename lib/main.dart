@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp>{
               color: Colors.black)
 
           ],
-          decoration: TextDecoration.underline
+          decoration: TextDecoration.combine([TextDecoration.underline, TextDecoration.overline])
 
 
         ),)
