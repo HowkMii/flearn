@@ -23,7 +23,10 @@ class _MyAppState extends State<MyApp>{
           Text(str,style: TextStyle( ),),
           RaisedButton(onPressed: (){
             str="hello";
-          },)
+
+          },
+          child: Text("hiii"),
+          )
 
         ],)
          
