@@ -33,6 +33,7 @@ class _MyAppState extends State<MyApp>{
           },
           child: Text("hiii"),
           splashColor: Colors.blue,
+          padding: EdgeInsets.all(12),
           )
 
         ],)
