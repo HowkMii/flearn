@@ -21,7 +21,9 @@ class _MyAppState extends State<MyApp>{
         appBar:AppBar(title: Text("appbar title"),) ,
         body: Column(children: <Widget>[
           Text(str,style: TextStyle( ),),
-          RaisedButton(onPressed: null)
+          RaisedButton(onPressed: (){
+            str="hello";
+          },)
 
         ],)
          
