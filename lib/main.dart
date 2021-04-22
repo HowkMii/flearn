@@ -21,7 +21,9 @@ class _MyAppState extends State<MyApp>{
         appBar:AppBar(title: Text("appbar title"),) ,
         body: Column(children: <Widget>[
           Text(str,style: TextStyle( ),),
-         FlatButton(onPressed: null, color: Colors.black, disabledTextColor: Colors.greenAccent,)
+         FlatButton(onPressed: null, color: Colors.black, disabledTextColor: Colors.greenAccent,
+          child: Text("flat button ", style: TextStyle(fontSize: 30),),
+         )
 
         ],)
          
