@@ -25,6 +25,12 @@ class _MyAppState extends State<MyApp>{
             str="hello";
 
           },
+          onLongPress: (){
+            setState(() {
+              str="";
+            });
+           
+          },
           child: Text("hiii"),
           )
 
