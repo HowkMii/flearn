@@ -25,7 +25,10 @@ class _MyAppState extends State<MyApp>{
           child: Text("flat button ", style: TextStyle(fontSize: 30),),
           padding: EdgeInsets.fromLTRB(30, 30, 20, 40),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.0)),
+            borderRadius: BorderRadius.circular(30.0),
+            side: BorderSide(color: Colors.red)
+            
+            ),
 
           ) ,
          
