@@ -23,6 +23,7 @@ class _MyAppState extends State<MyApp>{
           Text(str,style: TextStyle( ),),
          FlatButton(onPressed: null, color: Colors.black, disabledTextColor: Colors.greenAccent,
           child: Text("flat button ", style: TextStyle(fontSize: 30),),
+          padding: EdgeInsets.fromLTRB(30, 30, 20, 40),
          )
 
         ],)
