@@ -21,9 +21,13 @@ class _MyAppState extends State<MyApp>{
         appBar:AppBar(title: Text("appbar title"),) ,
         body: Column(children: <Widget>[
           Text(str,style: TextStyle( ),),
-         FlatButton(onPressed: null, color: Colors.black, disabledTextColor: Colors.greenAccent,
+         FlatButton(onPressed: null, color: Colors.black, disabledTextColor: Colors.greenAccent, textColor: Colors.cyan,
           child: Text("flat button ", style: TextStyle(fontSize: 30),),
           padding: EdgeInsets.fromLTRB(30, 30, 20, 40),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+
+          ) ,
          )
 
         ],)
