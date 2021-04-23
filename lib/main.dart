@@ -64,7 +64,8 @@ class _MyAppState extends State<MyApp>{
                   decoration: InputDecoration(
                     labelText:"text field",
                     labelStyle: TextStyle(fontSize: 40),
-                    hintText: "enter name"
+                    hintText: "enter name",
+                    icon: Icon(Icons.person_outline),
                     
                   ),
                   keyboardType: TextInputType.text,
