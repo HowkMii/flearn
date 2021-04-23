@@ -18,26 +18,24 @@ class _MyAppState extends State<MyApp>{
   Widget build(BuildContext context){
     return MaterialApp(
       home: Scaffold(
-        appBar:AppBar(title: Text("appbar title"),) ,
-        body: Column(children: <Widget>[
-          Text(str,style: TextStyle( ),),
-           Container(
-          alignment: Alignment.center,
-          child:  FlatButton(onPressed: null, color: Colors.black, disabledTextColor: Colors.greenAccent, textColor: Colors.cyan,
-          child: Text("flat button ", style: TextStyle(fontSize: 30),),
-          padding: EdgeInsets.fromLTRB(30, 30, 20, 40),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.0),
-            side: BorderSide(color: Colors.red)
-            
-            ),
+        appBar:AppBar(
+          title: Text("appbar title"),
+        ) ,
+        body: Container(
+          child: Column(
+            children: <Widget>[
+              SizedBox(height: 40,),
+              Container(),
+              SizedBox(height: 20,)
+        
 
-          ) ,
-         )
 
-        ],),floatingActionButton: FloatingActionButton(
-           onPressed: (){},
-         ) ,
+
+           ],
+          )
+          
+          ,),
+       
         
             
             
