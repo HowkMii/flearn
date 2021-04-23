@@ -71,6 +71,21 @@ class _MyAppState extends State<MyApp>{
                   keyboardType: TextInputType.emailAddress,
                 ),
              ),
+            Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText:"text field",
+                    labelStyle: TextStyle(fontSize: 40),
+                    hintText: "password ",
+                    icon: Icon(Icons.person_outline),
+                    
+                  ),
+                  keyboardType: TextInputType.visiblePassword,
+                ),
+             ),
+            
+            
+            
               SizedBox(height: 20,)
         
 
