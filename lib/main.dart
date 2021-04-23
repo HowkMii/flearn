@@ -33,6 +33,7 @@ class _MyAppState extends State<MyApp>{
                     hintText: "enter name"
                     
                   ),
+                  keyboardType: TextInputType.text,
                 ),
               ),
               SizedBox(height: 20,)
