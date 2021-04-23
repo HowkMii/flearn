@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp>{
                     icon: Icon(Icons.person_outline),
                     
                   ),
-                  keyboardType: TextInputType.text,
+                  keyboardType: TextInputType.emailAddress,
                 ),
              ),
               SizedBox(height: 20,)
