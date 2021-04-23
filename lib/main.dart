@@ -25,7 +25,16 @@ class _MyAppState extends State<MyApp>{
           child: Column(
             children: <Widget>[
               SizedBox(height: 40,),
-              Container(),
+              Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText:"text field",
+                    labelStyle: TextStyle(fontSize: 40),
+                    hintText: "enter name"
+                    
+                  ),
+                ),
+              ),
               SizedBox(height: 20,)
         
 
