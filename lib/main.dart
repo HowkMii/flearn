@@ -71,7 +71,7 @@ class _MyAppState extends State<MyApp>{
                   keyboardType: TextInputType.emailAddress,
                 ),
              ),
-            Container(
+              Container(
                 child: TextField(
                   decoration: InputDecoration(
                     labelText:"text field",
@@ -83,7 +83,18 @@ class _MyAppState extends State<MyApp>{
                   keyboardType: TextInputType.visiblePassword,
                 ),
              ),
-            
+               Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText:"text field",
+                    labelStyle: TextStyle(fontSize: 40),
+                    hintText: "phone number ",
+                    icon: Icon(Icons.person_outline),
+                    
+                  ),
+                  keyboardType: TextInputType.number,
+                ),
+             ),
             
             
               SizedBox(height: 20,)
