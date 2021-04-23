@@ -36,7 +36,40 @@ class _MyAppState extends State<MyApp>{
                   ),
                   keyboardType: TextInputType.text,
                 ),
-              ),
+             ),
+              Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText:"text field",
+                    labelStyle: TextStyle(fontSize: 40),
+                    hintText: "enter name"
+                    
+                  ),
+                  keyboardType: TextInputType.text,
+                ),
+             ),
+              Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText:"text field",
+                    labelStyle: TextStyle(fontSize: 40),
+                    hintText: "enter name"
+                    
+                  ),
+                  keyboardType: TextInputType.text,
+                ),
+             ),
+              Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText:"text field",
+                    labelStyle: TextStyle(fontSize: 40),
+                    hintText: "enter name"
+                    
+                  ),
+                  keyboardType: TextInputType.text,
+                ),
+             ),
               SizedBox(height: 20,)
         
 
@@ -45,8 +78,8 @@ class _MyAppState extends State<MyApp>{
            ],
           )
           
-          ,),
-       
+        ,),
+         
         
             
             
