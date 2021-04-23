@@ -22,6 +22,7 @@ class _MyAppState extends State<MyApp>{
           title: Text("appbar title"),
         ) ,
         body: Container(
+          margin: EdgeInsets.all(8),
           child: Column(
             children: <Widget>[
               SizedBox(height: 40,),
