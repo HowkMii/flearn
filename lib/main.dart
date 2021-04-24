@@ -13,6 +13,8 @@ class MyApp extends StatefulWidget{
 
 
 class _MyAppState extends State<MyApp>{
+  var b = Colors.black;
+  var w = Colors.white;
 bool pass = true;
   var str="";
   @override
@@ -20,19 +22,23 @@ bool pass = true;
     return MaterialApp(
       home: Scaffold(
         appBar:AppBar(
-          title: Text("appbar title"),
+          title: Text("APPbar title"),
         ) ,
         body: Container(
+          color: Colors.black,
           margin: EdgeInsets.all(8),
           child: Column(
             children: <Widget>[
               SizedBox(height: 40,),
                Container(
+                
                 child: TextField(
                   decoration: InputDecoration(
-                    labelText:"password",
-                    labelStyle: TextStyle(fontSize: 40),
+                    
+                    labelText:"Password",
+                    labelStyle: TextStyle(fontSize: 30, color: w),
                     hintText:"Password" ,
+                    hintStyle: TextStyle(fontSize: 20, color: w),
                     suffixIcon: IconButton(
                       icon: Icon(
                         pass? Icons.visibility: Icons.visibility_off
@@ -45,6 +51,7 @@ bool pass = true;
                     ),
                     
                   ),
+                  style: TextStyle(color: Colors.white),
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: pass,
                 ),
