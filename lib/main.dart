@@ -26,7 +26,7 @@ bool pass = true;
         ) ,
         body: Container(
           color: Colors.black,
-          margin: EdgeInsets.all(8),
+          
           child: Column(
             children: <Widget>[
               SizedBox(height: 40,),
