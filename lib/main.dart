@@ -13,6 +13,7 @@ class MyApp extends StatefulWidget{
 
 
 class _MyAppState extends State<MyApp>{
+bool pass = true;
   var str="";
   @override
   Widget build(BuildContext context){
@@ -26,73 +27,26 @@ class _MyAppState extends State<MyApp>{
           child: Column(
             children: <Widget>[
               SizedBox(height: 40,),
-              Container(
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText:"text field",
-                    labelStyle: TextStyle(fontSize: 40),
-                    hintText: "enter name"
-                    
-                  ),
-                  keyboardType: TextInputType.text,
-                ),
-             ),
-              Container(
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText:"text field",
-                    labelStyle: TextStyle(fontSize: 40),
-                    hintText: "enter name"
-                    
-                  ),
-                  keyboardType: TextInputType.text,
-                ),
-             ),
-              Container(
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText:"text field",
-                    labelStyle: TextStyle(fontSize: 40),
-                    hintText: "enter name"
-                    
-                  ),
-                  keyboardType: TextInputType.text,
-                ),
-             ),
-              Container(
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText:"text field",
-                    labelStyle: TextStyle(fontSize: 40),
-                    hintText: "enter name",
-                    icon: Icon(Icons.person_outline),
-                    
-                  ),
-                  keyboardType: TextInputType.emailAddress,
-                ),
-             ),
-              Container(
-                child: TextField(
-                  decoration: InputDecoration(
-                    labelText:"text field",
-                    labelStyle: TextStyle(fontSize: 40),
-                    hintText: "password ",
-                    icon: Icon(Icons.person_outline),
-                    
-                  ),
-                  keyboardType: TextInputType.visiblePassword,
-                ),
-             ),
                Container(
                 child: TextField(
                   decoration: InputDecoration(
-                    labelText:"text field",
+                    labelText:"password",
                     labelStyle: TextStyle(fontSize: 40),
-                    hintText: "phone number ",
-                    icon: Icon(Icons.person_outline),
+                    hintText:"Password" ,
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        pass? Icons.visibility: Icons.visibility_off
+                      ),
+                      onPressed: (){
+                        setState(() {
+                          pass= ! pass;
+                        });
+                      },
+                    ),
                     
                   ),
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.visiblePassword,
+                  obscureText: pass,
                 ),
              ),
             
