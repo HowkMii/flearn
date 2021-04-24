@@ -34,6 +34,10 @@ bool pass = true;
                 
                 child: TextField(
                   decoration: InputDecoration(
+                    enabledBorder:OutlineInputBorder(
+                      borderSide: BorderSide(width: 2,color: Colors.greenAccent),
+                      borderRadius: BorderRadius.circular(60.0)
+                      ) ,
                     
                     labelText:"Password",
                     labelStyle: TextStyle(fontSize: 30, color: w),
