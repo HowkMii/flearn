@@ -40,10 +40,11 @@ bool pass = true;
                       borderRadius: BorderRadius.circular(60.0)
                       ) ,
                     
-                    labelText:"phone",
+                    labelText:"phone number",
                     labelStyle: TextStyle(fontSize: 30, color: w),
                     
                     hintStyle: TextStyle(fontSize: 20, color: w),
+                    icon: Icon(Icons.phone)
                   
                     
                   ),
