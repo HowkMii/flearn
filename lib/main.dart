@@ -34,30 +34,22 @@ bool pass = true;
                 
                 child: TextField(
                   decoration: InputDecoration(
+                    prefixText: "+213" ,
                     enabledBorder:OutlineInputBorder(
                       borderSide: BorderSide(width: 2,color: Colors.greenAccent),
                       borderRadius: BorderRadius.circular(60.0)
                       ) ,
                     
-                    labelText:"Password",
+                    labelText:"phone",
                     labelStyle: TextStyle(fontSize: 30, color: w),
-                    hintText:"Password" ,
+                    
                     hintStyle: TextStyle(fontSize: 20, color: w),
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        pass? Icons.visibility: Icons.visibility_off
-                      ),
-                      onPressed: (){
-                        setState(() {
-                          pass= ! pass;
-                        });
-                      },
-                    ),
+                  
                     
                   ),
                   style: TextStyle(color: Colors.white),
-                  keyboardType: TextInputType.visiblePassword,
-                  obscureText: pass,
+                  keyboardType: TextInputType.number,
+                  
                 ),
              ),
             
