@@ -1,94 +1,53 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
-}
-class MyApp extends StatefulWidget{
-  @override
-  State<StatefulWidget> createState() {
-    return _MyAppState();
-  }
-  
+  runApp(SampleApp());
 }
 
-
-class _MyAppState extends State<MyApp>{
-  var b = Colors.black;
-  var w = Colors.white;
-bool pass = true;
-  var str="";
+class SampleApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar:AppBar(
-          title: Text("APPbar title"),
-        ) ,
-        body: Container(
-          color: Colors.black,
-          
-          child: Column(
-            children: <Widget>[
-              SizedBox(height: 40,),
-               Container(
-                
-                child: TextField(
-                  decoration: InputDecoration(
-                    prefixText: "+213" ,
-                    enabledBorder:OutlineInputBorder(
-                      borderSide: BorderSide(width: 2,color: Colors.greenAccent),
-                      borderRadius: BorderRadius.circular(60.0)
-                      ) ,
-                    
-                    labelText:"phone number",
-                    labelStyle: TextStyle(fontSize: 30, color: w),
-                    
-                    hintStyle: TextStyle(fontSize: 20, color: w),
-                    icon: Icon(Icons.phone)
-                  
-                    
-                  ),
-                  style: TextStyle(color: Colors.white),
-                  keyboardType: TextInputType.number,
-                  
-                ),
-             ),
-            
-            
-              SizedBox(height: 20,)
-        
-
-
-
-           ],
-          )
-          
-        ,),
-         
-        
-            
-            
-
-        ),
-        
-          
-        
-         
-        
-        
-        );
-       
-        
-     
-
-
+      title: 'Sample App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: SampleAppPage(),
+    );
+  }
 }
-  
-  
-  
-  
-  
- 
-  
 
+class SampleAppPage extends StatefulWidget {
+  SampleAppPage({Key key}) : super(key: key);
+
+  @override
+  _SampleAppPageState createState() => _SampleAppPageState();
+}
+
+class _SampleAppPageState extends State<SampleAppPage> {
+  // Default placeholder text
+  String textToShow = "I Like Flutter";
+
+  void _updateText() {
+    setState(() {
+      // update the text
+      textToShow = "Flutter is Awesome!";
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Sample App"),
+      ),
+      body: Center(child: Text(textToShow)),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _updateText,
+        tooltip: 'Update Text',
+        child: Icon(Icons.update),
+      ),
+    );
+  }
 }
