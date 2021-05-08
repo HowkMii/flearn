@@ -8,8 +8,8 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        
+      home: MyHomePage(
+
       ),
     );
   }
@@ -18,27 +18,19 @@ class MyApp extends StatelessWidget{
 }
 
 
-class _MyAppState extends State<MyApp>{
+class MyHomePage extends StatefulWidget{
   @override
-  Widget build(BuildContext context){
-    return MaterialApp(
-        home: Scaffold(appBar:AppBar(
-          backgroundColor: Colors.yellowAccent,
-          title: Text("appbar",style: TextStyle(color: Colors.black),),
+  State<StatefulWidget> createState() => _MyHomePageState();
+ 
 
-        ) ,
-        body: Container(
-
-        ),
-        ),
-     
-
-        
-        );
-       
-        
-     
-
+}
+class _MyHomePageState extends State<MyHomePage>{
+  @override
+  Widget build (BuildContext context){
+    return MaterialApp();
+  }
+  
+  }
 
 }
   
