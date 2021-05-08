@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       home: MyHomePage(
 
+
       ),
     );
   }
@@ -28,6 +29,9 @@ class _MyHomePageState extends State<MyHomePage>{
   @override
   Widget build (BuildContext context){
     return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+      ),
 
     );
   }
