@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MyApp());
 }
-class MyApp extends StatefulWidget{
+
+class MyApp extends StatelessWidget{
   @override
-  State<StatefulWidget> createState() {
-    return _MyAppState();
+  Widget build(BuildContext context) {
+  
   }
+ 
   
 }
 
@@ -22,7 +24,7 @@ class _MyAppState extends State<MyApp>{
 
         ) ,
         body: Container(
-          
+
         ),
         ),
      
