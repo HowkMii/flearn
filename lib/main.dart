@@ -19,7 +19,12 @@ class _MyAppState extends State<MyApp>{
         home: Scaffold(appBar:AppBar(
           backgroundColor: Colors.yellowAccent,
           title: Text("appbar",style: TextStyle(color: Colors.black),),
-        ) ,),
+
+        ) ,
+        body: Container(
+          
+        ),
+        ),
      
 
         
