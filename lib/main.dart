@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage>{
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.yellowAccent,
+          //backgroundColor: Colors.yellowAccent,
           title: Text("Appbar", style: TextStyle(color: Colors.black),),
         ),
         body: Container(),
