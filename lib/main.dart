@@ -7,6 +7,16 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  var questin =[
+    "whats your favorite color?",
+    "whats your favorite color?",
+    "whats your favorite color?",
+    "whats your favorite color?",
+    "whats your favorite color?",
+    "whats your favorite color?",
+    "whats your favorite color?",
+    "whats your favorite color?",
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +27,7 @@ class _MyAppState extends State<MyApp> {
         width: double.infinity,
         margin: EdgeInsets.all(10.0),
         child: Column(children: <Widget>[
-          Text("whats your favorite color?", style: TextStyle(fontSize:30 ),textAlign: TextAlign.center,),
+          Text(questin[0], style: TextStyle(fontSize:30 ),textAlign: TextAlign.center,),
 
 
         ],),
