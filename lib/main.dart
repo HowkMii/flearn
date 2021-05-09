@@ -38,7 +38,14 @@ class _MyHomePageState extends State<MyHomePage>{
           backgroundColor: Colors.yellowAccent,
           title: Text("Appbar", style: TextStyle(color: Colors.black),),
         ),
-        body: Container(),
+        body: Container(
+          child: Row(
+            children: <Widget>[
+              Text("aa"),
+              Text("bb")
+            ],
+          )
+        ),
       ),
 
     );
