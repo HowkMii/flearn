@@ -8,7 +8,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
-  var _question =[
+  final _question =[
     "whats your favorite color?",
     "whats your favorite color?",
     "whats your favorite color?",
