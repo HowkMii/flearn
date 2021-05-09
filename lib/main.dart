@@ -39,10 +39,9 @@ class _MyHomePageState extends State<MyHomePage>{
           title: Text("Appbar", style: TextStyle(color: Colors.black),),
         ),
         body: Container(
-          color: Colors.black38,
-          height: double.infinity,
+          margin: EdgeInsets.all(8.0),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+           
             children: <Widget>[
               Text("aa",style: TextStyle(color: Colors.black38,fontSize: 34),),
               Text("bb",style: TextStyle(color: Colors.black38,fontSize: 34),),
