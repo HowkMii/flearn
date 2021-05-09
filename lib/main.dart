@@ -47,11 +47,9 @@ class _MyHomePageState extends State<MyHomePage>{
           child: Row(
            
             children: <Widget>[
-              Text("bb",style: TextStyle(color: Colors.black38,fontSize: 34),),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("aa",style: TextStyle(color: Colors.black38,fontSize: 34),),
-              ),
+             MyText("aad",style:_textStyle),
+             
+              
             ],
           )
         ),
