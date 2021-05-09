@@ -7,7 +7,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var questin =[
+  int _questionIndex = 0;
+  var _question =[
     "whats your favorite color?",
     "whats your favorite color?",
     "whats your favorite color?",
@@ -27,7 +28,7 @@ class _MyAppState extends State<MyApp> {
         width: double.infinity,
         margin: EdgeInsets.all(10.0),
         child: Column(children: <Widget>[
-          Text(questin[0], style: TextStyle(fontSize:30 ),textAlign: TextAlign.center,),
+          Text(_question[0], style: TextStyle(fontSize:30 ),textAlign: TextAlign.center,),
 
 
         ],),
