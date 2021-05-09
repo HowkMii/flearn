@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
       ),
       body: Container(
         child: Question(
-          "skdncsdjf"
+          _question[3]
         ),
        
 
