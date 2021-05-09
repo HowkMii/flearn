@@ -30,13 +30,16 @@ class MyHomePage extends StatefulWidget{
 
 }
 class _MyHomePageState extends State<MyHomePage>{
+  var _textStyle= TextStyle(
+    color: Colors.black
+   );
   @override
   Widget build (BuildContext context){
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.yellowAccent,
-          title: Text("Appbar", style: TextStyle(color: Colors.black),),
+          title: Text("Appbar", style: _textStyle,),
         ),
         body: Container(
           margin: EdgeInsets.only(top: 23),
