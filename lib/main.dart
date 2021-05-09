@@ -42,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage>{
           color: Colors.black38,
           height: double.infinity,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text("aa",style: TextStyle(color: Colors.black38,fontSize: 34),),
               Text("bb",style: TextStyle(color: Colors.black38,fontSize: 34),),
