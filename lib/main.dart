@@ -41,8 +41,8 @@ class _MyHomePageState extends State<MyHomePage>{
         body: Container(
           child: Row(
             children: <Widget>[
-              Text("aa"),
-              Text("bb")
+              Text("aa",style: TextStyle(color: Colors.black38,fontSize: 34),),
+              Text("bb",style: TextStyle(color: Colors.black38,fontSize: 34),),
             ],
           )
         ),
