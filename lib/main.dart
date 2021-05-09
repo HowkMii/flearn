@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage>{
         ),
         body: Container(
           margin: EdgeInsets.only(top: 23),
+          padding: EdgeInsets.only(top:23),
           child: Row(
            
             children: <Widget>[
