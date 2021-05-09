@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'question.dart';
 
 main() => runApp(MyApp());
 class MyApp extends StatefulWidget {
@@ -25,6 +26,9 @@ class _MyAppState extends State<MyApp> {
        title: Text("Quiz"),
       ),
       body: Container(
+        child: Question(
+          "skdncsdjf"
+        ),
        
 
       ),
