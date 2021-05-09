@@ -12,7 +12,17 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(appBar: AppBar(
        title: Text("Quiz"),
-      ),),
+      ),
+      body: Container(
+        child: Column(children: <Widget>[
+          Text("whats your favorite color?", style: TextStyle(fontSize:30 ),textAlign: TextAlign.center,),
+
+
+        ],),
+
+      ),
+      
+      ),
       
     );
   }
