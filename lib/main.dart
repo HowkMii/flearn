@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage>{
           title: Text("Appbar", style: _textStyle,),
         ),
         body: Container(
-          alignment: AlignmentDirectional.center,
+          alignment: AlignmentDirectional.topStart,
           child: Stack(
             children: <Widget>[
               Container(
