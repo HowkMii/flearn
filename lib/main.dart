@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage>{
           title: Text("Appbar", style: TextStyle(color: Colors.black),),
         ),
         body: Container(
-          margin: EdgeInsets.fromLTRB(30, 10, 23, 32),
+          margin: EdgeInsets.symmetric(vertical: 8.0,horizontal: 18.0),
           child: Row(
            
             children: <Widget>[
