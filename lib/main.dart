@@ -26,6 +26,7 @@ class _MyAppState extends State<MyApp> {
        title: Text("Quiz"),
       ),
       body: Container(
+        width: double.infinity,
         child: Column(
           children:<Widget> [
             Question(
@@ -34,7 +35,7 @@ class _MyAppState extends State<MyApp> {
             RaisedButton(
               color: Colors.cyan,
               textColor: Colors.deepOrange,
-              child: Text("Ansewr 1",style: TextStyle(fontSize: 34),),
+              child: Text("Ansewr 1",style: TextStyle(fontSize: 34 ),),
               onPressed: (){
 
               },
