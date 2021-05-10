@@ -1,3 +1,4 @@
+import 'package:flearn/answer.dart';
 import 'package:flutter/material.dart';
 import 'question.dart';
 
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
             Question(
               _question[3]
             ),
-           
+            Ansewr(),
           ],
         ),
        
