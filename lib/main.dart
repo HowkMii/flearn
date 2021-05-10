@@ -26,8 +26,18 @@ class _MyAppState extends State<MyApp> {
        title: Text("Quiz"),
       ),
       body: Container(
-        child: Question(
-          _question[3]
+        child: Column(
+          children:<Widget> [
+            Question(
+              _question[3]
+            ),
+            RaisedButton(
+              color: Colors.cyan,
+              textColor: Colors.deepOrange,
+              child: Text("Ansewr 1"),
+              onPressed: null,
+            )
+          ],
         ),
        
 
