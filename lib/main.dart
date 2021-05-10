@@ -32,14 +32,7 @@ class _MyAppState extends State<MyApp> {
             Question(
               _question[3]
             ),
-            RaisedButton(
-              color: Colors.cyan,
-              textColor: Colors.deepOrange,
-              child: Text("Ansewr 1",style: TextStyle(fontSize: 34 ),),
-              onPressed: (){
-
-              },
-            )
+           
           ],
         ),
        
