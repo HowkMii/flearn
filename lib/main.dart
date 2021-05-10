@@ -30,10 +30,10 @@ class _MyAppState extends State<MyApp> {
         width: double.infinity,
         child: Column(
           children:<Widget> [
-            Question(
-              _question[3]
-            ),
-            Ansewr(),
+            Question(_question[3]),
+            Ansewr((){},"answer1"),
+            Ansewr((){},"answer2"),
+            Ansewr((){},"answer3"),
           ],
         ),
        
