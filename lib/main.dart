@@ -11,7 +11,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
   void answerQuestion(){
+    _questionIndex+=1;
     print("Answer chosen ! ");
+    print(_questionIndex);
 
 
   }
