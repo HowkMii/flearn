@@ -27,15 +27,23 @@ class _MyAppState extends State<MyApp> {
 
 
   }
-  final _question =[
-    "whats your favorite color?",
-    "whats your favorite color?",
-    "whats your favorite color?",
-    "whats your favorite color?",
-    "whats your favorite color?",
-    "whats your favorite color?",
-    "whats your favorite color?",
-    "whats your favorite color?",
+  final List<Map<String, Object>> _question =[
+    {
+      'questionText':'whats your favorite color?',
+      'answers':['black','green','blue'],
+
+    },
+    {
+      'questionText':'whats your favorite color?',
+      'answers':['white','green','yellow']
+      
+    },
+    {
+      'questionText':'whats your favorite color?',
+      'answers':['black','white','green']
+      
+    },
+    
   ];
   @override
   Widget build(BuildContext context) {
@@ -47,10 +55,11 @@ class _MyAppState extends State<MyApp> {
         width: double.infinity,
         child: Column(
           children:<Widget> [
-            Question(_question[_questionIndex]),
-            Ansewr(answerQuestion,"answer1"),
-            Ansewr(answerQuestion,"answer2"),
-            Ansewr(answerQuestion,"answer3"),
+            Question(_question[_questionIndex]['questionText']),
+            ...(_question[_questionIndex]['answer'] as List<String>).map((ansewr){
+
+            }).toList()
+            
           ],
         ),
        
