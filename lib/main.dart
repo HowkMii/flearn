@@ -57,6 +57,7 @@ class _MyAppState extends State<MyApp> {
           children:<Widget> [
             Question(_question[_questionIndex]['questionText']),
             ...(_question[_questionIndex]['answer'] as List<String>).map((ansewr){
+              return Ansewr(answerQuestion,ansewr);
 
             }).toList()
             
