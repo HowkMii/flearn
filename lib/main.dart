@@ -62,7 +62,9 @@ class _MyAppState extends State<MyApp> {
             }).toList()
             
           ],
-        ):Text("Done!"),
+        ):Center(
+          child: Text("Done!")
+        ),
        
 
       ),
