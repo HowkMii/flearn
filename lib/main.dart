@@ -53,16 +53,16 @@ class _MyAppState extends State<MyApp> {
       ),
       body: Container(
         width: double.infinity,
-        child: Column(
+        child:_questionIndex<_question.length? Column(
           children:<Widget> [
             Question(_question[_questionIndex]['questionText']),
             ...(_question[_questionIndex]['answer'] as List<String>).map((ansewr){
-              return Ansewr(answerQuestion,ansewr);
+              return Ansewr(answerQuestion, ansewr);
 
             }).toList()
             
           ],
-        ),
+        ):Text("Done!"),
        
 
       ),
