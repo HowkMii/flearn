@@ -1,5 +1,6 @@
 import 'package:flearn/answer.dart';
 import 'package:flearn/quiz.dart';
+import 'package:flearn/result.dart';
 import 'package:flutter/material.dart';
 import 'question.dart';
 
@@ -54,11 +55,8 @@ class _MyAppState extends State<MyApp> {
       ),
       body: Container(
         width: double.infinity,
-        child:_questionIndex<_question.length?
-        Quiz(_question,_questionIndex,answerQuestion)
-        :Center(
-          child: Text("Done!")
-        ),
+        child:_questionIndex<_question.length? Quiz(_question,_questionIndex,answerQuestion)
+        :Result()
        
 
       ),

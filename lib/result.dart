@@ -3,7 +3,20 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-          child: Text("Done!",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),)
-        );
+      child: Column(
+        children: <Widget>[
+         
+                 
+          Text("Done!",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold)),
+          FlatButton(
+            child: Text("restart the app",style: TextStyle(color: Colors.blue),),
+            onPressed: (){},
+          )
+                
+               
+
+        ],
+      ),
+    );
   }
 }
