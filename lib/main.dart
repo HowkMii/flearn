@@ -1,4 +1,5 @@
 import 'package:flearn/answer.dart';
+import 'package:flearn/quiz.dart';
 import 'package:flutter/material.dart';
 import 'question.dart';
 
@@ -53,16 +54,9 @@ class _MyAppState extends State<MyApp> {
       ),
       body: Container(
         width: double.infinity,
-        child:_questionIndex<_question.length? Column(
-          children:<Widget> [
-            Question(_question[_questionIndex]['questionText']),
-            ...(_question[_questionIndex]['answer'] as List<String>).map((ansewr){
-              return Ansewr(answerQuestion, ansewr);
-
-            }).toList()
-            
-          ],
-        ):Center(
+        child:_questionIndex<_question.length?
+        Quiz(_question,_questionIndex,answerQuestion)
+        :Center(
           child: Text("Done!")
         ),
        
