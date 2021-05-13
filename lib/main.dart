@@ -12,6 +12,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
+  void _resetQuiz(){
+    setState(() {
+      _questionIndex = 0;
+    });
+  }
   
 
   void answerQuestion(){
@@ -32,7 +37,7 @@ class _MyAppState extends State<MyApp> {
   final List<Map<String, Object>> _question =[
     {
       'questionText':'whats your favorite color?',
-      'answers':['black','green','blue'],
+      'answers':[{'black'},'green','blue'],
 
     },
     {
@@ -56,7 +61,7 @@ class _MyAppState extends State<MyApp> {
       body: Container(
         width: double.infinity,
         child:_questionIndex<_question.length? Quiz(_question,_questionIndex,answerQuestion)
-        :Result()
+        :Result(_resetQuiz)
        
 
       ),
