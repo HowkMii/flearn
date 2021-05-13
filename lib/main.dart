@@ -12,14 +12,17 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
+  int _totalScore =0;
   void _resetQuiz(){
     setState(() {
       _questionIndex = 0;
+      _totalScore =0;
     });
   }
   
 
-  void answerQuestion(){
+  void answerQuestion(score){
+    _totalScore +=score;
       
   if (_questionIndex ==1){
     _questionIndex = -1;
