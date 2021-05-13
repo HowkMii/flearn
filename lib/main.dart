@@ -37,17 +37,17 @@ class _MyAppState extends State<MyApp> {
   final List<Map<String, Object>> _question =[
     {
       'questionText':'whats your favorite color?',
-      'answers':[{'text':'black','score':10},'green','blue'],
+      'answers':[{'text':'black','score':10},{'text':'green','score':0},{'text':'blue','score':4}],
 
     },
     {
       'questionText':'whats your favorite color?',
-      'answers':['white',{'text':'green','score':7},'yellow']
+      'answers':[{'text':'white','score':30},{'text':'green','score':7},{'text':'yellow','score':10}]
       
     },
     {
       'questionText':'whats your favorite color?',
-      'answers':['black',{'text':'white','score':3},'green']
+      'answers':[{'text':'black','score':20},{'text':'white','score':3},{'text':'green','score':10}]
       
     },
     
