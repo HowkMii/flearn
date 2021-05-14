@@ -13,6 +13,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
   int _totalScore =0;
+  int num=0;
   void _resetQuiz(){
     setState(() {
       _questionIndex = 0;
@@ -22,6 +23,7 @@ class _MyAppState extends State<MyApp> {
   
 
   void answerQuestion(score){
+    num=score;
     _totalScore +=score;
       
   if (_questionIndex ==1){
@@ -43,13 +45,13 @@ class _MyAppState extends State<MyApp> {
 
     },
     {
-      'questionText':'whats your favorite color?',
-      'answers':[{'text':'white','score':30},{'text':'green','score':7},{'text':'yellow','score':10}]
+      'questionText':'whats your favorite animal?',
+      'answers':[{'text':'horse','score':30},{'text':'cat','score':7},{'text':'dog','score':10}]
       
     },
     {
-      'questionText':'whats your favorite color?',
-      'answers':[{'text':'black','score':20},{'text':'white','score':3},{'text':'green','score':10}]
+      'questionText':'whats your favorite food?',
+      'answers':[{'text':'chawrma','score':20},{'text':'couscous','score':3},{'text':'pizza','score':10}]
       
     },
     
@@ -57,19 +59,33 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(appBar: AppBar(
        title: Text("Quiz"),
       ),
       body: Container(
-        width: double.infinity,
-        child:_questionIndex<_question.length? Quiz(_question,_questionIndex,answerQuestion)
-        :Result(_resetQuiz,_totalScore)
+        
+        child:_questionIndex<_question.length
+        ? Quiz(_question,_questionIndex,answerQuestion)
+        : Result(_resetQuiz, _totalScore),
        
 
       ),
-      
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.arrow_back,),
+        onPressed: (){
+          setState(() {
+            _totalScore-=num;
+            if(_questionIndex>0){
+               _questionIndex--;
+
+            }
+           
+          });
+        },
       ),
       
+    ),
     );
   }
 }

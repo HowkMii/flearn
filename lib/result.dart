@@ -16,6 +16,7 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
          
           Text(ResultScore,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
