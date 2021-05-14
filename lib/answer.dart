@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 class Ansewr extends StatelessWidget {
-  final String answerQ;
+  final String  answerQ;
   final Function x; 
   Ansewr(this.x,this.answerQ);
   @override

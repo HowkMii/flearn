@@ -64,7 +64,7 @@ class _MyAppState extends State<MyApp> {
       body: Container(
         width: double.infinity,
         child:_questionIndex<_question.length? Quiz(_question,_questionIndex,answerQuestion)
-        :Result(_resetQuiz)
+        :Result(_resetQuiz,_totalScore)
        
 
       ),
