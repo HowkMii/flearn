@@ -1,8 +1,8 @@
-import 'package:flearn/answer.dart';
+
 import 'package:flearn/quiz.dart';
 import 'package:flearn/result.dart';
 import 'package:flutter/material.dart';
-import 'question.dart';
+
 
 main() => runApp(MyApp());
 class MyApp extends StatefulWidget {
@@ -32,9 +32,7 @@ class _MyAppState extends State<MyApp> {
       _questionIndex+=1;
     });
     
-    print("Answer chosen ! ");
-    print(_questionIndex);
-     print(_totalScore);
+ 
 
 
   }
