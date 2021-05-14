@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 class Result extends StatelessWidget {
   final Function q;
-  Result(this.q);
+  final ResultScore;
+  Result(this.q,this.ResultScore);
   @override
   Widget build(BuildContext context) {
     return Center(
