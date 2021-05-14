@@ -19,7 +19,7 @@ class Result extends StatelessWidget {
         children: <Widget>[
          
                  
-          Text("$ResultScore!",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold)),
+          Text(resultphase,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold)),
           FlatButton(
             child: Text("restart the app",style: TextStyle(color: Colors.blue),),
             onPressed: q,

@@ -34,6 +34,7 @@ class _MyAppState extends State<MyApp> {
     
     print("Answer chosen ! ");
     print(_questionIndex);
+     print(_totalScore);
 
 
   }
