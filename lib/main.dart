@@ -79,9 +79,9 @@ class _MyAppState extends State<MyApp> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.arrow_back,),
         onPressed: (){
-          if(_questionIndex==0) _totalScore=num0;
-          else if(_questionIndex==1) _totalScore=num1;
-          else if(_questionIndex==2) _totalScore=num2;
+          if(_questionIndex==1) _totalScore=num0;
+          else if(_questionIndex==2) _totalScore=num1;
+          else if(_questionIndex==3) _totalScore=num2;
 
           setState(() {
             if(_questionIndex>0){
