@@ -13,7 +13,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _questionIndex = 0;
   int _totalScore =0;
-  int num=0;
+  int num0=0;
+  int num1=0;
+  int num2=0;
   void _resetQuiz(){
     setState(() {
       _questionIndex = 0;
@@ -23,10 +25,14 @@ class _MyAppState extends State<MyApp> {
   
 
   void answerQuestion(score){
-    num=score;
+    if(_questionIndex==0) num0=score;
+    else if(_questionIndex==1) num1=score;
+    else if(_questionIndex==2) num2=score;
+   
     _totalScore +=score;
       
   if (_questionIndex ==1){
+    
     _questionIndex = -1;
 
   }
@@ -64,7 +70,6 @@ class _MyAppState extends State<MyApp> {
        title: Text("Quiz"),
       ),
       body: Container(
-        
         child:_questionIndex<_question.length
         ? Quiz(_question,_questionIndex,answerQuestion)
         : Result(_resetQuiz, _totalScore),
@@ -74,8 +79,11 @@ class _MyAppState extends State<MyApp> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.arrow_back,),
         onPressed: (){
+          if(_questionIndex==0) _totalScore=num0;
+          else if(_questionIndex==1) _totalScore=num1;
+          else if(_questionIndex==2) _totalScore=num2;
+
           setState(() {
-            _totalScore-=num;
             if(_questionIndex>0){
                _questionIndex--;
 
