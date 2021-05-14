@@ -18,7 +18,8 @@ class Result extends StatelessWidget {
       child: Column(
         children: <Widget>[
          
-                 
+          Text(ResultScore,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
+         
           Text(resultphase,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
          
           FlatButton(
