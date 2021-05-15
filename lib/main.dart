@@ -9,10 +9,10 @@ class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
 }
-
+ Color w =Colors.white;
+Color b =Colors.black26;
 class _MyAppState extends State<MyApp> {
-  Color w =Colors.white;
-  Color b =Colors.black;
+ 
   bool isSwitched =false;
   int _questionIndex = 0;
   int _totalScore =0;
@@ -89,6 +89,7 @@ class _MyAppState extends State<MyApp> {
        ],
       ),
       body: Container(
+        
         color: w,
         child:_questionIndex<_question.length
         ? Quiz(_question,_questionIndex,answerQuestion)
@@ -97,7 +98,7 @@ class _MyAppState extends State<MyApp> {
 
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.arrow_back,),
+        child: Icon(Icons.arrow_back,color: w,size: 30,),
         onPressed: (){
           if(_questionIndex==1) _totalScore=num0;
           else if(_questionIndex==2) _totalScore=num1;

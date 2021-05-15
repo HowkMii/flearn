@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'main.dart';
 class Result extends StatelessWidget {
   final Function q;
   final resultScore;
@@ -20,9 +21,9 @@ class Result extends StatelessWidget {
         children: <Widget>[
           
          
-          Text('$resultScore',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
+          Text('$resultScore',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold, color: b), textAlign:TextAlign.center,),
          
-          Text(resultphase,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
+          Text(resultphase,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: b), textAlign:TextAlign.center,),
          
           FlatButton(
             child: Text("restart the app",style: TextStyle(color: Colors.blue),),
