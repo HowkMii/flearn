@@ -20,7 +20,7 @@ class Result extends StatelessWidget {
         children: <Widget>[
           
          
-          Text(resultScore,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
+          Text('$resultScore',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
          
           Text(resultphase,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
          
