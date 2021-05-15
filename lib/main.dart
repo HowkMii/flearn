@@ -1,124 +1,20 @@
-
-import 'package:flearn/quiz.dart';
-import 'package:flearn/result.dart';
 import 'package:flutter/material.dart';
 
+void main() => runApp(MyApp());
 
-main() => runApp(MyApp());
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
- Color w =Colors.white;
-Color b =Colors.black26;
-class _MyAppState extends State<MyApp> {
- 
-  bool isSwitched =false;
-  int _questionIndex = 0;
-  int _totalScore =0;
-  int num0=0;
-  int num1=0;
-  int num2=0;
-  void _resetQuiz(){
-    setState(() {
-      _questionIndex = 0;
-      _totalScore =0;
-    });
-  }
-  
-
-  void answerQuestion(score){
-    if(_questionIndex==0) num0=score;
-    else if(_questionIndex==1) num1=score;
-    else if(_questionIndex==2) num2=score;
-   
-    _totalScore +=score;
-  
-    setState(() {
-      _questionIndex += 1;
-    });
-    
- 
-
-
-  }
-  final List<Map<String, Object>> _question =[
-    {
-      'questionText':'whats your favorite color?',
-      'answers':[{'text':'black','score':10},{'text':'green','score':0},{'text':'blue','score':4}],
-
-    },
-     {
-      'questionText':'whats your favorite food?',
-      'answers':[{'text':'chawrma','score':20},{'text':'couscous','score':3},{'text':'pizza','score':10}]
-      
-    },
-    {
-      'questionText':'whats your favorite animal?',
-      'answers':[{'text':'horse','score':30},{'text':'cat','score':7},{'text':'dog','score':10}]
-      
-    },
-   
-    
-  ];
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(appBar: AppBar(
-
-       title: Text("Quiz"),
-       actions: <Widget>[
-         Switch(value: isSwitched, 
-         onChanged:(value){
-           setState(() {
-             isSwitched=value;
-             if(isSwitched==true){
-               b=Colors.white;
-               w=Colors.black;
-             }
-             if(isSwitched==false){
-               w=Colors.white;
-               b=Colors.black;
-             }
-           });
-           
-
-
-         },
-         activeColor:Colors.white ,
-         inactiveThumbColor: Colors.black,
-         inactiveTrackColor: Colors.white,
-          )
-       ],
+      title: 'Welcome to Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome to Flutter'),
+        ),
+        body: Center(
+          child: Text('Hello World'),
+        ),
       ),
-      body: Container(
-        
-        color: w,
-        child:_questionIndex<_question.length
-        ? Quiz(_question,_questionIndex,answerQuestion)
-        : Result(_resetQuiz, _totalScore),
-       
-
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.arrow_back,color: w,size: 30,),
-        onPressed: (){
-          if(_questionIndex==1) _totalScore=num0;
-          else if(_questionIndex==2) _totalScore=num1;
-          else if(_questionIndex==3) _totalScore=num2;
-
-          setState(() {
-            if(_questionIndex>0){
-               _questionIndex--;
-
-            }
-           
-          });
-        },
-      ),
-      
-    ),
     );
   }
 }
