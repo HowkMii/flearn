@@ -13,6 +13,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Color w =Colors.white;
   Color b =Colors.black;
+  bool isSwitched =false;
   int _questionIndex = 0;
   int _totalScore =0;
   int num0=0;
@@ -65,7 +66,27 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(appBar: AppBar(
+
        title: Text("Quiz"),
+       actions: <Widget>[
+         Switch(value: isSwitched, 
+         onChanged:(value){
+           setState(() {
+             isSwitched=value;
+             if(isSwitched==true){
+               b=Colors.white;
+               w=Colors.black;
+             }
+             if(isSwitched==false){
+               w=Colors.white;
+               b=Colors.black;
+             }
+           });
+           
+
+
+         }, )
+       ],
       ),
       body: Container(
         color: w,
