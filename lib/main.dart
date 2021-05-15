@@ -85,7 +85,11 @@ class _MyAppState extends State<MyApp> {
            
 
 
-         }, )
+         },
+         activeColor:Colors.white ,
+         inactiveThumbColor: Colors.black,
+         inactiveTrackColor: Colors.white,
+          )
        ],
       ),
       body: Container(
