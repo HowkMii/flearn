@@ -9,7 +9,7 @@ class Ansewr extends StatelessWidget {
       width: double.infinity,
       child:  RaisedButton(
               color: Colors.cyan,
-              textColor: Colors.deepOrange,
+              textColor: Colors.white,
               child: Text(answerQ,style: TextStyle(fontSize: 34 ),),
               onPressed:x,
             ),

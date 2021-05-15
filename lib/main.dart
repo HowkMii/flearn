@@ -30,14 +30,9 @@ class _MyAppState extends State<MyApp> {
     else if(_questionIndex==2) num2=score;
    
     _totalScore +=score;
-      
-  if (_questionIndex ==1){
-    
-    _questionIndex = -1;
-
-  }
+  
     setState(() {
-      _questionIndex+=1;
+      _questionIndex += 1;
     });
     
  
@@ -50,16 +45,17 @@ class _MyAppState extends State<MyApp> {
       'answers':[{'text':'black','score':10},{'text':'green','score':0},{'text':'blue','score':4}],
 
     },
+     {
+      'questionText':'whats your favorite food?',
+      'answers':[{'text':'chawrma','score':20},{'text':'couscous','score':3},{'text':'pizza','score':10}]
+      
+    },
     {
       'questionText':'whats your favorite animal?',
       'answers':[{'text':'horse','score':30},{'text':'cat','score':7},{'text':'dog','score':10}]
       
     },
-    {
-      'questionText':'whats your favorite food?',
-      'answers':[{'text':'chawrma','score':20},{'text':'couscous','score':3},{'text':'pizza','score':10}]
-      
-    },
+   
     
   ];
   @override

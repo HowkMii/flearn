@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 class Result extends StatelessWidget {
   final Function q;
-  final ResultScore;
-  Result(this.q,this.ResultScore);
+  final resultScore;
+  Result(this.q,this.resultScore);
   String get resultphase{
     String resulttext;
-    if(ResultScore>60 ){
+    if(resultScore>60 ){
       resulttext="you are awsome";
-    }else if(ResultScore<=60){
+    }else if(resultScore<=60){
       resulttext="you are bad";
     }
     return resulttext;
@@ -18,8 +18,9 @@ class Result extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          
          
-          Text(ResultScore,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
+          Text(resultScore,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
          
           Text(resultphase,style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold), textAlign:TextAlign.center,),
          
