@@ -11,6 +11,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  var w =Colors.white;
   int _questionIndex = 0;
   int _totalScore =0;
   int num0=0;
@@ -66,6 +67,7 @@ class _MyAppState extends State<MyApp> {
        title: Text("Quiz"),
       ),
       body: Container(
+        color: Colors.white,
         child:_questionIndex<_question.length
         ? Quiz(_question,_questionIndex,answerQuestion)
         : Result(_resetQuiz, _totalScore),
