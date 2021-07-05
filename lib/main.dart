@@ -21,9 +21,11 @@ class MyHomePage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title: Text('flutter App',style: TextStyle(color: b),),),
       body: Container(
-        width: double.infinity,
+        //width: double.infinity,
         color: b,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text("Text1",style: TextStyle(color: w,fontSize: 20,),)
           ],
