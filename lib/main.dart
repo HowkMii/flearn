@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget{
-  final x1= Info();
+  final x1= Info(name: "abdelhakim",height: 179,dateTime: DateTime.now());
   @override
   Widget build(BuildContext context){
     return Scaffold(
