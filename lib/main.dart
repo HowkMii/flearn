@@ -30,12 +30,10 @@ class MyHomePage extends StatelessWidget{
         //width: double.infinity,
         color: b,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Text("Text1",style: TextStyle(color: w,fontSize: 20,),)
+          children:<Widget> [
+            Text(x1.name, style: TextStyle(color: w,fontSize: 34),),
           ],
-        ),
+        )
 
       ),
     );
