@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'info.dart';
 
 void main() => runApp(MyApp());
 Color w = Colors.white;
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget{
+  final x1= Info();
   @override
   Widget build(BuildContext context){
     return Scaffold(
