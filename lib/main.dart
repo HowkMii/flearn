@@ -22,7 +22,7 @@ class MyHomePage extends StatelessWidget{
   Info(name: "mekki",height: 179,dateTime: DateTime.now()),
   Info(name: "mostafa",height: 179,dateTime: DateTime.now()),
   Info(name: "lahcen",height: 179,dateTime: DateTime.now()),
-  Info(name: "yacine",height: 179,dateTime: DateTime.now()),
+  Info(name: "yacine",height: 179,dateTime: DateTime.now())
  ];
   
   @override
@@ -34,7 +34,24 @@ class MyHomePage extends StatelessWidget{
         color: b,
         child: Column(
           children:<Widget> [
-            Text(x1.name, style: TextStyle(color: w,fontSize: 34),),
+            ...li.map((val){
+              return Container(
+                padding: EdgeInsets.all(10.0),
+                child: Column(
+
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Text(val.name, style: TextStyle(color: w,fontSize: 16),),
+                        Text("${val.height}", style: TextStyle(color: w,fontSize: 16),),
+                      ],
+                    ),
+                    Text("${val.dateTime}", style: TextStyle(color: w,fontSize: 16),),
+                    
+                  ],),
+                  
+              );
+            }).toList(),
           ],
         )
 
