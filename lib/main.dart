@@ -17,11 +17,14 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget{
-  final x1= Info(name: "abdelhakim",height: 179,dateTime: DateTime.now());
-  final x2= Info(name: "mekki",height: 179,dateTime: DateTime.now());
-  final x3= Info(name: "mostafa",height: 179,dateTime: DateTime.now());
-  final x4= Info(name: "lahcen",height: 179,dateTime: DateTime.now());
-  final x5= Info(name: "yacine",height: 179,dateTime: DateTime.now());
+ final List<Info> li=[
+  Info(name: "abdelhakim",height: 179,dateTime: DateTime.now()),
+  Info(name: "mekki",height: 179,dateTime: DateTime.now()),
+  Info(name: "mostafa",height: 179,dateTime: DateTime.now()),
+  Info(name: "lahcen",height: 179,dateTime: DateTime.now()),
+  Info(name: "yacine",height: 179,dateTime: DateTime.now()),
+ ];
+  
   @override
   Widget build(BuildContext context){
     return Scaffold(
