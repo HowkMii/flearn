@@ -36,7 +36,9 @@ class MyHomePage extends StatelessWidget{
           children:<Widget> [
             ...li.map((val){
               return Card(
-                
+                color: b,
+                shadowColor: Colors.greenAccent,
+                elevation: 10,
                 child: Column(
 
                   children: <Widget>[
