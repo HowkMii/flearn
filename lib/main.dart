@@ -35,7 +35,9 @@ class MyHomePage extends StatelessWidget{
         child: Column(
           children:<Widget> [
             ...li.map((val){
-              return Card(
+              return Container(
+                padding: EdgeInsets.all(10.0),
+                child: Card(
                 color: b,
                 shadowColor: Colors.greenAccent,
                 elevation: 10,
@@ -52,11 +54,11 @@ class MyHomePage extends StatelessWidget{
                     
                   ],),
                   
-              );
+              ));
             }).toList(),
           ],
         )
-
+        
       ),
     );
   }
