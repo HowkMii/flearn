@@ -38,8 +38,8 @@ class MyHomePage extends StatelessWidget{
       body: Container(
         //width: double.infinity,
         color: b,
-        child: SingleChildScrollView(
-          child: Column(
+        
+          child: ListView(
             children:<Widget> [
               ...li.map((val){
                 return Padding(
@@ -70,7 +70,7 @@ class MyHomePage extends StatelessWidget{
           ),
         )
         
-      ),
+      
     );
   }
 }
