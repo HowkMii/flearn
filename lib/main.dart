@@ -39,10 +39,9 @@ class MyHomePage extends StatelessWidget{
         //width: double.infinity,
         color: b,
         
-          child: ListView(
-            children:<Widget> [
-              ...li.map((val){
-                return Padding(
+          child: ListView.builder(
+            itemBuilder:(ctx,i){
+              return Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Card(
                   color: b,
@@ -55,18 +54,19 @@ class MyHomePage extends StatelessWidget{
                       children: <Widget>[
                         Row(
                           children: <Widget>[
-                            Text(val.name, style: TextStyle(color: w,fontSize: 16),),
-                            Text("${val.height}", style: TextStyle(color: w,fontSize: 16),),
+                            Text(li[i].name, style: TextStyle(color: w,fontSize: 16),),
+                            Text("${li[i].height}", style: TextStyle(color: w,fontSize: 16),),
                           ],
                         ),
-                        Text("${val.dateTime}", style: TextStyle(color: w,fontSize: 16),),
+                        Text("${li[i].dateTime}", style: TextStyle(color: w,fontSize: 16),),
                         
                       ],),
                   ),
                     
                 ));
-              }).toList(),
-            ],
+            } ,
+            itemCount: li.length,
+           
           ),
         )
         
