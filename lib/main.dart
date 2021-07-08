@@ -35,8 +35,8 @@ class MyHomePage extends StatelessWidget{
         child: Column(
           children:<Widget> [
             ...li.map((val){
-              return Container(
-                padding: EdgeInsets.all(10.0),
+              return Card(
+                
                 child: Column(
 
                   children: <Widget>[
