@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget{
                             Text("${li[i].height}", style: TextStyle(color: w,fontSize: 16),),
                           ],
                         ),
-                        Text("${DateFormat().format(li[i].dateTime)}", style: TextStyle(color: w,fontSize: 16),),
+                        Text("${DateFormat('yy/MMM/dd').format(li[i].dateTime)}", style: TextStyle(color: w,fontSize: 16),),
                         
                       ],),
                   ),
