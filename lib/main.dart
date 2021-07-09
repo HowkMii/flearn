@@ -1,4 +1,4 @@
-
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'info.dart';
 
@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+    theme: ThemeData(primaryColor: Colors.green,accentColor: Colors.pinkAccent),
     debugShowCheckedModeBanner: false,
     title: 'Flutter  App',
     home: MyHomePage(),
@@ -32,12 +33,14 @@ class MyHomePage extends StatelessWidget{
  ];
   void daiki(BuildContext ctx){
     showModalBottomSheet(context: ctx, builder: (_){
+      
       return  ListView.builder(
+        
             itemBuilder:(_,i){
               return Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Card(
-                  color: b,
+                  color: Theme.of(ctx).primaryColor,
                   shadowColor: Colors.greenAccent,
                   elevation: 10,
                   child: Padding(
@@ -51,7 +54,7 @@ class MyHomePage extends StatelessWidget{
                             Text("${li[i].height}", style: TextStyle(color: w,fontSize: 16),),
                           ],
                         ),
-                        Text("${li[i].dateTime}", style: TextStyle(color: w,fontSize: 16),),
+                        Text("${DateFormat().format(li[i].dateTime)}", style: TextStyle(color: w,fontSize: 16),),
                         
                       ],),
                   ),
