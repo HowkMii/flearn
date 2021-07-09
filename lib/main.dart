@@ -10,7 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    theme: ThemeData(primaryColor: Colors.green,accentColor: Colors.pinkAccent),
+    theme: ThemeData(primaryColor: Colors.green,accentColor: Colors.pinkAccent,fontFamily: 'Quicksand',appBarTheme:AppBarTheme(textTheme:ThemeData.light().textTheme.copyWith(
+    title: TextStyle(fontFamily:'OpenSans', fontSize: 25, )
+    )) ),
     debugShowCheckedModeBanner: false,
     title: 'Flutter  App',
     home: MyHomePage(),
@@ -54,7 +56,7 @@ class MyHomePage extends StatelessWidget{
                             Text("${li[i].height}", style: TextStyle(color: w,fontSize: 16),),
                           ],
                         ),
-                        Text("${DateFormat('yy/MMM/dd').format(li[i].dateTime)}", style: TextStyle(color: w,fontSize: 16),),
+                        Text("${DateFormat().format(li[i].dateTime)}", style: TextStyle(color: w,fontSize: 16),),
                         
                       ],),
                   ),
