@@ -73,6 +73,8 @@ class MyHomePage extends StatelessWidget{
         color: b,
         
         ),
+        floatingActionButton: FloatingActionButton(child: Icon(Icons.add),
+        onPressed: ()=>daiki(context),),
         
       
     );
