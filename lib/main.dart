@@ -30,17 +30,10 @@ class MyHomePage extends StatelessWidget{
   Info(name: "yacine",height: 179,dateTime: DateTime.now())
 
  ];
-  
-  @override
-  Widget build(BuildContext context){
-    return Scaffold(
-      appBar: AppBar(title: Text('flutter App',style: TextStyle(color: b),),),
-      body: Container(
-        //width: double.infinity,
-        color: b,
-        
-          child: ListView.builder(
-            itemBuilder:(ctx,i){
+  void daiki(BuildContext ctx){
+    showModalBottomSheet(context: ctx, builder: (_){
+      return  ListView.builder(
+            itemBuilder:(_,i){
               return Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Card(
@@ -67,8 +60,19 @@ class MyHomePage extends StatelessWidget{
             } ,
             itemCount: li.length,
            
-          ),
-        )
+          );
+    });
+   
+  }
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(title: Text('flutter App',style: TextStyle(color: b),),),
+      body: Container(
+        //width: double.infinity,
+        color: b,
+        
+        ),
         
       
     );
