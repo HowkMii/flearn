@@ -25,7 +25,7 @@ class MyHomePage extends StatelessWidget{
     return  Container(
       padding: EdgeInsets.all(20),
       child: Text(title,style: TextStyle(fontSize: 30)),
-      decoration: BoxDecoration(gradient: LinearGradient(colors:[Colors.red, Colors.pinkAccent] ,begin:Alignment.topLeft ,end:Alignment.bottomRight ),borderRadius: BorderRadius.circular(15)
+      decoration: BoxDecoration(gradient: LinearGradient(colors:[color.withOpacity(0.3), color] ,begin:Alignment.topLeft ,end:Alignment.bottomRight ),borderRadius: BorderRadius.circular(15)
       ),
     );
 
