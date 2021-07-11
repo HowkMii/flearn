@@ -74,34 +74,11 @@ class MyHomePage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title: Text('flutter App',style: TextStyle(color: b),),),
       body: Container(
-        child: Row(
-
-          children: <Widget>[
-            Expanded(
-              flex: 3,
-              child: Container(
-                padding: EdgeInsets.all(30),
-                color: Colors.cyan,
-                child: Text("1"),
-              ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Container(
-                padding: EdgeInsets.all(30),
-                color: Colors.pinkAccent,
-                child: Text("2"),
-              ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                padding: EdgeInsets.all(30),
-                color: Colors.amber,
-                child: Text("3"),
-              ),
-            ),
-          ],
+        padding: EdgeInsets.only(top: 15),
+        child: GridView(
+          children: <Widget>[],
+          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: maxCrossAxisExtent),
+         
         ),
       ),
       
