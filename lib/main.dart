@@ -7,15 +7,7 @@ Color w = Colors.white;
 Color b = Colors.black;
 
 class MyApp extends StatelessWidget {
-  Widget info(String title , Color color){
-    return  Container(
-      padding: EdgeInsets.all(15),
-      child: Text(title,style: TextStyle(fontSize: 30)),
-      decoration: BoxDecoration(color: color,
-      ),
-    );
-
-  }
+ 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,6 +21,15 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget{
+   Widget info(String title , Color color){
+    return  Container(
+      padding: EdgeInsets.all(20),
+      child: Text(title,style: TextStyle(fontSize: 30)),
+      decoration: BoxDecoration(gradient: LinearGradient(colors:[Colors.red, Colors.pinkAccent] ,begin:Alignment.topLeft ,end:Alignment.bottomRight ),borderRadius: BorderRadius.circular(15)
+      ),
+    );
+
+  }
  final List<Info> li=[
   Info(name: "abdelhakim",height: 179,dateTime: DateTime.now()),
   Info(name: "mekki",height: 179,dateTime: DateTime.now()),
@@ -86,7 +87,16 @@ class MyHomePage extends StatelessWidget{
         padding: EdgeInsets.only(top: 15),
         child: GridView(
           children: <Widget>[
-           info("title1", Colors.red)
+           info("title1", Colors.red),
+           info("title1", Colors.greenAccent),
+                      info("title1", Colors.red),
+           info("title1", Colors.greenAccent),
+                      info("title1", Colors.red),
+           info("title1", Colors.greenAccent),
+                      info("title1", Colors.red),
+           info("title1", Colors.greenAccent),
+                      info("title1", Colors.red),
+           info("title1", Colors.greenAccent),
           ],
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200,childAspectRatio: 3/2,crossAxisSpacing: 20,mainAxisSpacing: 20),
          
@@ -96,5 +106,6 @@ class MyHomePage extends StatelessWidget{
       
      ); }
 
-  info(String s, MaterialColor red) {}
+
 }
+
