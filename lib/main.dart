@@ -76,8 +76,15 @@ class MyHomePage extends StatelessWidget{
       body: Container(
         padding: EdgeInsets.only(top: 15),
         child: GridView(
-          children: <Widget>[],
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200,childAspectRatio: 3/2),
+          children: <Widget>[
+            Text("text1"),
+            Text("text1"),
+            Text("text1"),
+            Text("text1"),
+            Text("text1"),
+            Text("text1"),
+          ],
+          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200,childAspectRatio: 3/2,crossAxisSpacing: 20,mainAxisSpacing: 20),
          
         ),
       ),
