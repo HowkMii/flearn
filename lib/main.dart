@@ -75,11 +75,14 @@ class MyHomePage extends StatelessWidget{
       appBar: AppBar(title: Text('flutter App',style: TextStyle(color: b),),),
       body: Container(
         child: Row(
+
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(30),
-              color: Colors.cyan,
-              child: Text("1"),
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.cyan,
+                child: Text("1"),
+              ),
             ),
             Container(
               padding: EdgeInsets.all(30),
