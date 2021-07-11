@@ -73,22 +73,28 @@ class MyHomePage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(title: Text('flutter App',style: TextStyle(color: b),),),
-      body: Center(
-        child: RaisedButton(
-          padding: EdgeInsets.symmetric(vertical: 20,horizontal: 40),
-          child: Text("Date Picker",style: TextStyle(color: Colors.white,fontSize: 30),),
-          color: Colors.black,
-          onPressed: (){
-            showDatePicker(context: context, initialDate: DateTime.now(), firstDate: DateTime(1990), lastDate: DateTime.now());
-          },
+      body: Container(
+        child: Row(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.cyan,
+              child: Text("1"),
+            ),
+            Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.pinkAccent,
+              child: Text("2"),
+            ),
+            Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.amber,
+              child: Text("3"),
+            ),
+          ],
         ),
-       
-        
-        ),
-        floatingActionButton: FloatingActionButton(child: Icon(Icons.add),
-        onPressed: ()=>daiki(context),),
-        
+      ),
       
-    );
-  }
+      
+     ); }
 }
