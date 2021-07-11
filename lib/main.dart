@@ -77,7 +77,7 @@ class MyHomePage extends StatelessWidget{
         padding: EdgeInsets.only(top: 15),
         child: GridView(
           children: <Widget>[],
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: maxCrossAxisExtent),
+          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200),
          
         ),
       ),
