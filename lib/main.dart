@@ -7,6 +7,15 @@ Color w = Colors.white;
 Color b = Colors.black;
 
 class MyApp extends StatelessWidget {
+  Widget info(String title , Color color){
+    return  Container(
+      padding: EdgeInsets.all(15),
+      child: Text(title,style: TextStyle(fontSize: 30)),
+      decoration: BoxDecoration(color: color,
+      ),
+    );
+
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -77,12 +86,7 @@ class MyHomePage extends StatelessWidget{
         padding: EdgeInsets.only(top: 15),
         child: GridView(
           children: <Widget>[
-            Text("text1"),
-            Text("text1"),
-            Text("text1"),
-            Text("text1"),
-            Text("text1"),
-            Text("text1"),
+           info("title1", Colors.red)
           ],
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200,childAspectRatio: 3/2,crossAxisSpacing: 20,mainAxisSpacing: 20),
          
@@ -91,4 +95,6 @@ class MyHomePage extends StatelessWidget{
       
       
      ); }
+
+  info(String s, MaterialColor red) {}
 }
