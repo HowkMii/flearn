@@ -1,7 +1,7 @@
 import 'package:flearn/screen1.dart';
 import 'package:flearn/screen2.dart';
 import 'package:flutter/material.dart';
-void mian() => MyApp();
+void main()=> MyApp();
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children:<Widget> [
             InkWell(
-              child: Text("Go to screen1",style: TextStyle(fontSize: 30)),
+              child: Text("Go to screen2",style: TextStyle(fontSize: 30)),
               onTap: (){
                 selectScreen(context,1);
               },
