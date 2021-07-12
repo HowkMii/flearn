@@ -12,6 +12,13 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget {
+  void selectScreen(BuildContext ctx){
+    Navigator.of(ctx).push( MaterialPageRoute(
+      builder: (_){
+
+      }
+      ));
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +27,13 @@ class MyHomePage extends StatelessWidget {
       
         title:Text("Mainscreen") ,
       ),
-      body: Container(
+      body: Center(
+        child: InkWell(
+          child: Text("Go to screen1",style: TextStyle(fontSize: 30)),
+          onTap: (){
+            selectScreen(context);
+          },
+          ),
 
       ),
     );
