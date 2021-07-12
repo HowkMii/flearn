@@ -1,3 +1,4 @@
+import 'package:flearn/screen1.dart';
 import 'package:flutter/material.dart';
 void mian() => MyApp();
 class MyApp extends StatelessWidget {
@@ -15,7 +16,7 @@ class MyHomePage extends StatelessWidget {
   void selectScreen(BuildContext ctx){
     Navigator.of(ctx).push( MaterialPageRoute(
       builder: (_){
-
+        return ScreenOne();
       }
       ));
   }
