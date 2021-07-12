@@ -1,4 +1,5 @@
 import 'package:flearn/screen1.dart';
+import 'package:flearn/screen2.dart';
 import 'package:flutter/material.dart';
 void mian() => MyApp();
 class MyApp extends StatelessWidget {
@@ -13,10 +14,13 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget {
-  void selectScreen(BuildContext ctx){
+  void selectScreen(BuildContext ctx,int n){
     Navigator.of(ctx).push( MaterialPageRoute(
       builder: (_){
-        return ScreenOne();
+        if (n==1) return ScreenOne();
+        return ScreenTwo();  
+        
+        
       }
       ));
   }
@@ -29,12 +33,23 @@ class MyHomePage extends StatelessWidget {
         title:Text("Mainscreen") ,
       ),
       body: Center(
-        child: InkWell(
-          child: Text("Go to screen1",style: TextStyle(fontSize: 30)),
-          onTap: (){
-            selectScreen(context);
-          },
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children:<Widget> [
+            InkWell(
+              child: Text("Go to screen1",style: TextStyle(fontSize: 30)),
+              onTap: (){
+                selectScreen(context,1);
+              },
+              ),
+            InkWell(
+              child: Text("Go to screen2",style: TextStyle(fontSize: 30)),
+              onTap: (){
+                selectScreen(context,2);
+              },
+              ),
+          ],
+        ),
 
       ),
     );
