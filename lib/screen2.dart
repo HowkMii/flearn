@@ -4,11 +4,9 @@ class ScreenTwo extends StatelessWidget {
   
   void selectScreen(BuildContext ctx){
   
-    Navigator.of(ctx).push( MaterialPageRoute(
-      builder: (_){    
-        return ScreenOne("data passed from screen 2");  
-      }
-      ));
+     Navigator.of(ctx).pushReplacementNamed(
+      '/x1',
+    );
   }
   @override
   Widget build(BuildContext context) {
