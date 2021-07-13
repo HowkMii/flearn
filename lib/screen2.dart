@@ -1,8 +1,7 @@
 import 'package:flearn/screen1.dart';
 import 'package:flutter/material.dart';
 class ScreenTwo extends StatelessWidget {
-  final String str2;
-  ScreenTwo(this.str2);
+  
   void selectScreen(BuildContext ctx){
   
     Navigator.of(ctx).push( MaterialPageRoute(
@@ -18,7 +17,7 @@ class ScreenTwo extends StatelessWidget {
      body: Center(
         child:  Column(
           children: <Widget>[
-            Text(str2,style: TextStyle(fontSize: 30)),
+            Text("",style: TextStyle(fontSize: 30)),
             InkWell(
                   child: Text("Go to screen1",style: TextStyle(fontSize: 30)),
                   onTap: (){
