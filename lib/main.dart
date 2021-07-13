@@ -1,8 +1,9 @@
 import 'package:flearn/screen1.dart';
 import 'package:flearn/screen2.dart';
 import 'package:flutter/material.dart';
-void main()=> MyApp();
+void main()=> runApp(MyApp()) ;
 class MyApp extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,11 +15,12 @@ class MyApp extends StatelessWidget {
   }
 }
 class MyHomePage extends StatelessWidget {
+
   void selectScreen(BuildContext ctx,int n){
     Navigator.of(ctx).push( MaterialPageRoute(
       builder: (_){
-        if (n==1) return ScreenOne();
-        return ScreenTwo();  
+        if (n==1) return ScreenOne("information 1");
+        return ScreenTwo("information 2");  
         
         
       }

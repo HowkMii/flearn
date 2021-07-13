@@ -1,6 +1,8 @@
 import 'package:flearn/screen2.dart';
 import 'package:flutter/material.dart';
 class ScreenOne extends StatelessWidget {
+  final String str;
+  ScreenOne(this.str);
    void selectScreen(BuildContext ctx){
     Navigator.of(ctx).push( MaterialPageRoute(
       builder: (_){    
