@@ -17,6 +17,7 @@ class ScreenOne extends StatelessWidget {
         child:  Column(
           children: <Widget>[
             Text("$routeArg['id']",style: TextStyle(fontSize: 30)),
+            Text(routeArg['title'],style: TextStyle(fontSize: 30)),
             InkWell(
                   child: Text("Go to screen1",style: TextStyle(fontSize: 30)),
                   onTap: (){
