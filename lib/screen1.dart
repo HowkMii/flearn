@@ -14,7 +14,10 @@ class ScreenOne extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("screen one"),),
       body: Center(
-        child:  Column(
+          
+      ),
+      drawer: Drawer(
+        child: Column(
           children: <Widget>[
             Text("${routeArg['id']}",style: TextStyle(fontSize: 30)),
             Text(routeArg['title'],style: TextStyle(fontSize: 30)),
@@ -25,7 +28,7 @@ class ScreenOne extends StatelessWidget {
                   },
                   ),
           ],
-        ),
+        ), 
       ),
     );
   }

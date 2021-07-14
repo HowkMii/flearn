@@ -23,8 +23,13 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
 
   void selectScreen(BuildContext ctx,int n){
-    Navigator.of(ctx).pushNamed(
+    Navigator.of(ctx).pushReplacementNamed(
       n==1 ? '/x1':'/x2',
+      arguments: {
+
+      'id':10,
+      'title':'info1',
+      },
     );
         
       
