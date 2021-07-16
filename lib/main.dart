@@ -34,6 +34,24 @@ class MyHomePage extends StatelessWidget {
         
       
   }
+
+  List<Widget> _page=[
+    Scaffold(
+      appBar: AppBar(
+        title: Text("Part 1"),
+        
+      ),
+      body: Center(
+        child: Text("Text1"),
+      ),
+    ),
+     Scaffold(
+      
+      body: Center(
+        child: Text("Text2"),
+      ),
+    )
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
